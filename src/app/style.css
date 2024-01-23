@@ -1,0 +1,72 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --white-color: #ffffff;
+  --accent-color: #77093b;
+  --text-color: #000000;
+  --light-color: #fff6ea;
+  --footer-color: #fac8dc;
+  --grey-color: #e4e4e4;
+  --pink-color: #ef81a7;
+  --button-color: #f3b39d;
+  --place-color: #fdf2ef;
+
+  --montserrat-font: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-family: var(--montserrat-font);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--white-color);
+
+}
+
+body {
+  margin: 0;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.input {
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.button {
+  background: var(--button-color);
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.button:hover {
+  background: var(--place-color);
+}
